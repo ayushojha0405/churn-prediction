@@ -1,67 +1,66 @@
-📊 Customer Churn Prediction System
+# 📊 Customer Churn Prediction System
 
-A full-stack machine learning web application that predicts whether a customer is likely to churn (leave a service) using classification models and provides explainability using SHAP.
+A **full-stack ML application** that predicts customer churn with high accuracy and explains *why* using SHAP.
+
+🚀 **Live Demo:** *(Add your deployed link here)*
 
 ---
 
-🚀 Live Demo
-*(Add your deployed link here later)*
+## ⚡ Overview
 
+This project uses machine learning models to predict whether a customer is likely to churn and provides **interpretable insights** for decision-making.
 
-📌 Features
+✔ Real-time predictions
+✔ Model comparison (5 algorithms)
+✔ Explainable AI using SHAP
+✔ Interactive dashboard
 
-* 🔍 Predict customer churn in real-time
-* 🤖 Multiple ML models comparison (5 models)
-* ⚡ FastAPI backend for inference
-* 🎯 XGBoost as final optimized model
-* 📈 Model performance visualization (F1 Score)
-* 🧠 SHAP-based feature importance (top contributing factors)
-* 💻 Clean and responsive React dashboard
-* 🎨 Professional UI with Tailwind CSS
+---
 
-🧠 Machine Learning Details
+## 🧠 ML Pipeline
 
-Models Used
+### Models Implemented
 
 * Logistic Regression
 * Decision Tree
 * Random Forest
 * K-Nearest Neighbors (KNN)
-* XGBoost (Final Model)
+* **XGBoost (Final Model)**
 
-Evaluation Metrics
+### 📊 Evaluation Metrics
 
 * Accuracy
 * Precision
 * Recall
 * F1 Score
 
-Final Model Selection
+👉 **Final Choice:** XGBoost — best balance between performance and generalization.
 
-XGBoost was chosen based on balanced performance and generalization.
+---
 
-📊 Explainability
+## 🔍 Explainability (SHAP)
 
-* Integrated **SHAP (SHapley Additive Explanations)**
-* Displays top features influencing prediction
-* Helps understand *why* a customer may churn
+* Feature contribution analysis
+* Top factors affecting churn prediction
+* Improves trust and interpretability
 
+---
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-Frontend
+### Backend
+
+* FastAPI
+* Uvicorn
+
+### Frontend
 
 * React.js
 * Tailwind CSS
 * Axios
 * Recharts
 
-Backend
-
-* FastAPI
-* Uvicorn
-
-Machine Learning
+### Machine Learning
 
 * pandas
 * numpy
@@ -69,74 +68,94 @@ Machine Learning
 * XGBoost
 * SHAP
 
+---
 
-📂 Project Structure
+## 💻 System Architecture
 
+Frontend (React) → API (FastAPI) → ML Model (XGBoost) → Prediction + SHAP Output
 
+---
+
+## 📂 Project Structure
+
+```
 churn-project/
 │
 ├── backend/
 │   ├── main.py
 │   ├── model.pkl
 │   ├── columns.pkl
-│   ├── utils.py
+│   └── utils.py
 │
 ├── frontend/
 │   ├── src/
-│   ├── package.json
+│   └── package.json
 │
 ├── ml/
 │   ├── train.py
 │
 └── data/
+```
 
+---
 
-⚙️ How to Run Locally
+## ⚙️ Run Locally
 
-1️⃣ Clone Repository
+### 1. Clone Repo
 
+```
 git clone <your-repo-link>
 cd churn-project
+```
 
-2️⃣ Backend Setup
+### 2. Backend
 
+```
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
+```
 
-Backend runs on:
+👉 Runs on: http://127.0.0.1:8000
 
-http://127.0.0.1:8000
+### 3. Frontend
 
-3️⃣ Frontend Setup
-
+```
 cd frontend
 npm install
 npm run dev
+```
 
-Frontend runs on:
+👉 Runs on: http://localhost:5173
 
-http://localhost:5173
+---
 
-📈 Example Output
+## 📈 Output
 
-* Prediction: **Churn / No Churn**
+* Churn Prediction (Yes / No)
 * Probability Score
 * Risk Level (Low / Medium / High)
-* Top Contributing Features
+* Key Influencing Features
 
-🎯 Future Improvements
+---
 
-* SHAP visualization graph
-* User authentication system
+## 🎯 Future Improvements
+
+* SHAP visualization graphs
+* User authentication
 * Prediction history tracking
-* Deployment with Docker
-* Real-time dataset integration
+* Docker deployment
+* Real-time data integration
 
-👨‍💻 Author
+---
+
+## 👨‍💻 Author
 
 **Ayush Ranjan Ojha**
 
-📜 License
+---
+
+## 📜 License
 
 This project is for educational and portfolio purposes.
+
